@@ -1,0 +1,7 @@
+.env
+.venv/
+node_modules/
+dist/
+*.log
+chroma.sqlite3
+chroma_data/
