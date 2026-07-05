@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
-const N8N_UPLOAD_WEBHOOK = "http://localhost:5678/webhook/ingest";
-const N8N_CHAT_WEBHOOK   = "http://localhost:5678/webhook/ask";
+const N8N_UPLOAD_WEBHOOK = "https://n8n-production-3ac2.up.railway.app/webhook/ingest";
+const N8N_CHAT_WEBHOOK   = "https://n8n-production-3ac2.up.railway.app/webhook/ask";
 
 export default function RAGChatbot() {
   const [messages, setMessages] = useState([
@@ -15,7 +15,7 @@ export default function RAGChatbot() {
   const fileInputRef = useRef(null);
   const chatEndRef   = useRef(null);
   const textareaRef  = useRef(null);
-
+  
   /* Inject global reset once so the app truly fills the viewport */
   useEffect(() => {
     const style = document.createElement("style");
