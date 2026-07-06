@@ -5,7 +5,7 @@ const N8N_CHAT_WEBHOOK   = "https://n8n-production-3ac2.up.railway.app/webhook/a
 
 export default function RAGChatbot() {
   const [messages, setMessages] = useState([
-    { role: "assistant", content: "Hi! Upload a PDF, Word document, or image and then ask me anything about it.", id: Date.now() },
+    { role: "assistant", content: "Hi! How can I help you today?", id: Date.now() },
   ]);
   const [input, setInput]           = useState("");
   const [uploading, setUploading]   = useState(false);
